@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>FOOD LINE-Online Food Ordering</title>
+    <link rel="shortcut icon" href="foodicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="sticky-top" style="font-size: 13px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="foodicon.png" alt="s" width="60px" height="60px"> <a
+                        class="navbar-brand" href="#" class="logo">FOOD LINE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <img src="percentage.png" alt="b"
+                                        height="19px">Offers<span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px; padding-right: 10px;">NEW</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Restaurant
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Listing</a></li>
+                                    <li><a class="dropdown-item" href="#">Detail + cart</a></li>
+                                    <li><a class="dropdown-item" href="#">checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Track order</a></li>
+                                    <li><a class="dropdown-item" href="#">Invoice</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                    <li><a class="dropdown-item" href="#">404</a></li>
+                                    <li><a class="dropdown-item" href="#">Extra:)</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Oredrs</a></li>
+                                    <li><a class="dropdown-item" href="#">Offers</a></li>
+                                    <li><a class="dropdown-item" href="#">Favourites</a></li>
+                                    <li><a class="dropdown-item" href="#">Payments</a></li>
+                                    <li><a class="dropdown-item" href="#">Addresses</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cart
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Oredrs</a></li>
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <div class="section1">
+        <div class="container-fliud">
+            <div class="row">
+                <div class="col-sm-12 bg-dark text-white  text-center p-5">
+                    <h1>Offers Near You</h1>
+                    <p style="color: #868585;font-weight: bold;font-size: 15px;">Best deals at your favourite
+                        restaurants </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 mt-5" style="line-height: 60px;">
+                    <h4 style="font-weight: bold;">OFFERS <span style="font-size: 15px;">299 restaurants</span></h4>
+                    <div class="row bg-white">
+                        <div class="container">
+                            <div class="col-sm-10 mt-3">
+                                <h6>Filter By</h6><br>
+                                <hr>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <h6>Loacation</h6>
+                                                </a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <form action="form" class="vignesh">
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Ludhiana junction
+                                                        <span
+                                                            style="color: #868585; font-size: 10px;">230</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Model Town <span
+                                                            style="color: #868585; font-size: 10px;">95</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Civil Lines <span
+                                                            style="color: #868585; font-size: 10px;">35</span></label></br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Durgi <span
+                                                            style="color: #868585; font-size: 10px;">46</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Pau <span
+                                                            style="color: #868585; font-size: 10px;">20</span></label>
+
+                                                </form>
+                                                <a href="#" style="color: red;text-decoration: none; font-size: 13px;">
+                                                    See
+                                                    all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <h6>All Cuisines</h6>
+                                                </a>
+
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <form action="form" class="vignesh">
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">American <span
+                                                            style="color: #868585; font-size: 10px;">156</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Pizza <span
+                                                            style="color: #868585; font-size: 10px;">120</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Healthy <span
+                                                            style="color: #868585; font-size: 10px;">130</span></label></br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Vegetarian <span
+                                                            style="color: #868585; font-size: 10px;">120</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">chinese<span
+                                                            style="color: #868585; font-size: 10px;">111</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">HAmburgers<span
+                                                            style="color: #868585; font-size: 10px;">95</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Dessert<span
+                                                            style="color: #868585; font-size: 10px;">50</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Chicken<span
+                                                            style="color: #868585; font-size: 10px;">32</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Indian<span
+                                                            style="color: #868585; font-size: 10px;">156</span></label>
+
+                                                </form>
+                                                <a href="#" style="color: red;text-decoration: none; font-size: 13px;">
+                                                    See
+                                                    all</a><br><br>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <h6>Feature</h6>
+                                                </a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <form action="form" class="vignesh">
+
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Free Delivery
+                                                        <span
+                                                            style="color: #868585; font-size: 10px;">156</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">coupens <span
+                                                            style="color: #868585; font-size: 10px;">120</span></label></br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Open Now [1:31am]
+                                                        <span
+                                                            style="color: #868585; font-size: 10px;">85</span></label><br>
+
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                                aria-expanded="false" aria-controls="collapsefour">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <h6>Delivery Time</h6>
+                                                </a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <form action="form" class="vignesh">
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Any Time <span
+                                                            style="color: #868585; font-size: 10px;"></span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">25 min <span
+                                                            style="color: #868585; font-size: 10px;"></span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">30 min<span
+                                                            style="color: #868585; font-size: 10px;"></span></label></br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">40 min <span
+                                                            style="color: #868585; font-size: 10px;"></span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">50 min<span
+                                                            style="color: #868585; font-size: 10px;"></span></label><br>
+
+
+
+                                                </form>
+                                                <a href="#" style="color: red;text-decoration: none; font-size: 13px;">
+                                                    See
+                                                    all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefive"
+                                                aria-expanded="false" aria-controls="collapsefive">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <h6>Category</h6>
+                                                </a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefive" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <form action="form" class="vignesh">
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Delivery<span
+                                                            style="color: #868585; font-size: 10px;">156</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">Dine-out <span
+                                                            style="color: #868585; font-size: 10px;">120</span></label><br>
+
+                                                    <input type="checkbox" name="vicky"><label for="checkbox"
+                                                        style="font-weight: bolder; font-size: 12px;">cafes<span
+                                                            style="color: #868585; font-size: 10px;">85</span></label></br>
+
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="radio mt-5">
+                            <input type="radio" name="vicky"><label for="radio"
+                                style="font-weight: bolder; font-size: 12px;">Gold Partner</label><br>
+                            <input type="radio" name="vicky"><label for="radio"
+                                style="font-weight: bolder; font-size: 12px;">Order Food Online</label><br>
+                            <input type="radio" name="vicky"><label for="radio"
+                                style="font-weight: bolder; font-size: 12px;">Osahan</label><br><br><b></b>
+                        </div><br>
+                        <hr><br><br><br><br>
+                        <!-- <p style="font-size: 13px; color: rgb(69, 191, 69);"> use code OSAHAN50 to get 50% OFF (up to
+                            30) in first 5 orders. T&C apply</p> -->
+                    </div>
+                </div>
+                <div class="col-sm-9 mt-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-1  ms-auto rrr" class="g"
+                                style="border: 1px solid rgb(8, 166, 228); width: 130px; text-align: end; font-size: 13px;"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sort by :Distance
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Distance</a></li>
+                                <li><a class="dropdown-item" href="#">No of Offers</a></li>
+                                <li><a class="dropdown-item" href="#">Rating</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <marquee behavior="scroll" direction="left" class="mt-2">
+                        <img src="foodoffer1.avif" alt="v" width="90px" height="95px">
+                        <img src="foodoffer3.avif" alt="v" width="80px" height="95px">
+                        <img src="foodoffer2.avif" alt="v" width="80px" height="95px">
+                        <img src="foodoffer4.avif" alt="v" width="80px" height="95px">
+                        <img src="foodoffer5.avif" alt="v" width="80px" height="95px">
+                        <img src="foodoffer6.avif" alt="v" width="80px" height="95px">
+                        <img src="foodoffer7.avif" alt="v" width="80px" height="95px">
+                        <img src="foodoffer1.avif" alt="v" width="80px" height="95px">
+                        <img src="foodoffer4.avif" alt="v" width="80px" height="95px">
+                    </marquee>
+                    <div class="row cat mt-3">
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <span class="span1 text-right"
+                                    style="background-color:rgb(98, 93, 93) ; color: #0b0a0a; font-size: 15px;">promoted</span>
+                                <span class="span2"
+                                    style="background-color: rgb(119, 195, 243); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                <img src="foodoffer2.avif" class="card-img-top" alt="y">
+                                <div class="card-body" style="line-height: 15px;">
+                                    <h5>World famous</h5>
+                                    <p> indian *American Burgur </p>
+                                    <h7><i class="fa-regular fa-clock"></i>20-25</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">70% off | use coupen vignesh34</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <span class="span1"
+                                    style="background-color: rgb(120, 120, 164); color: #0a0808;font-size: 15px; ">promoted</span>
+                                <span class="span2"
+                                    style="background-color: rgb(233, 179, 91); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                <img src="foodoffer9.jpg" class="card-img-top" alt="i">
+                                <div class="card-body"style="line-height: 15px;">
+                                    <h5>Food world</h5>
+                                    <p>North indian *chinies veg </p>
+                                    <h7><i class="fa-regular fa-clock"></i>25-30</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px; ">Offer </span>
+                                    <span style="font-size: 13px;">80% off | use coupen vignesh14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss" >
+                            <div class="card">
+                                <div class="cardd">
+                                    <span class="span1"
+                                        style="background-color: rgb(156, 91, 254); color: #080707; font-size: 15px;">promoted</span>
+                                    <span class="span2"
+                                        style="background-color: hsl(0, 92%, 68%); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                    <img src="foodoffer10.jpg" class="card-img-top" alt="o">
+                                </div>
+                                <div class="card-body" style="line-height: 15px;">
+                                    <h5>Foodie Street</h5>
+                                    <p> indian *Corean pizza </p>
+                                    <h7><i class="fa-regular fa-clock"></i>10-30</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">60% off | use coupen vignesh28</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <span class="span1"
+                                    style="background-color: rgb(198, 155, 238); color: #080606; font-size: 15px;">promoted</span>
+                                <span class="span2"
+                                    style="background-color: #7de493; color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                <img src="foodoffer1.avif" class="card-img-top" alt="r">
+                                <div class="card-body" style="line-height: 15px;">
+                                    <h5>Foodies</h5>
+                                    <p> indian *Africa Biriyani </p>
+                                    <h7><i class="fa-regular fa-clock"></i>25-40</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">50% off | use coupen vignesh24</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <div class="cardd">
+                                    <span class="span1"
+                                        style="background-color: rgb(156, 91, 254); color: #080707; font-size: 15px;">promoted</span>
+                                    <span class="span2"
+                                        style="background-color: hsl(0, 92%, 68%); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                    <img src="foodoffer12.avif" class="card-img-top" alt="o">
+                                </div>
+                                <div class="card-body" style="line-height: 15px;">
+                                    <h5>Foodie Street</h5>
+                                    <p> indian *Corean pizza </p>
+                                    <h7><i class="fa-regular fa-clock"></i>10-30</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">60% off | use coupen vignesh28</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <div class="cardd">
+                                    <span class="span1"
+                                        style="background-color: rgb(156, 91, 254); color: #080707; font-size: 15px;">promoted</span>
+                                    <span class="span2"
+                                        style="background-color: hsl(0, 92%, 68%); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                    <img src="foodoffer2.avif" class="card-img-top" alt="o">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Foodie Street</h5>
+                                    <p> indian *Corean pizza </p>
+                                    <h7><i class="fa-regular fa-clock"></i>10-30</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">60% off | use coupen vignesh28</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <div class="cardd">
+                                    <span class="span1"
+                                        style="background-color: rgb(156, 91, 254); color: #080707; font-size: 15px;">promoted</span>
+                                    <span class="span2"
+                                        style="background-color: hsl(0, 92%, 68%); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                    <img src="foodoffer5.avif" class="card-img-top" alt="o">
+                                </div>
+                                <div class="card-body" style="line-height: 15px;">
+                                    <h5>Foodie Street</h5>
+                                    <p> indian *Corean pizza </p>
+                                    <h7><i class="fa-regular fa-clock"></i>10-30</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">60% off | use coupen vignesh28</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <div class="cardd">
+                                    <span class="span1"
+                                        style="background-color: rgb(156, 91, 254); color: #080707; font-size: 15px;">promoted</span>
+                                    <span class="span2"
+                                        style="background-color: hsl(0, 92%, 68%); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                    <img src="foodoffer7.avif" class="card-img-top" alt="o">
+                                </div>
+                                <div class="card-body" style="line-height: 15px;">
+                                    <h5>Foodie Street</h5>
+                                    <p> indian *Corean pizza </p>
+                                    <h7><i class="fa-regular fa-clock"></i>10-30</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">60% off | use coupen vignesh28</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cardss">
+                            <div class="card">
+                                <div class="cardd">
+                                    <span class="span1"
+                                        style="background-color: rgb(156, 91, 254); color: #080707; font-size: 15px;">promoted</span>
+                                    <span class="span2"
+                                        style="background-color: hsl(0, 92%, 68%); color: white; font-size: 12px;">&#9733;3.1(300+)</span>
+                                    <img src="foodoffer3.avif" class="card-img-top" alt="o">
+                                </div>
+                                <div class="card-body" style="line-height: 15px;">
+                                    <h5>Foodie Street</h5>
+                                    <p> indian *Corean pizza </p>
+                                    <h7><i class="fa-regular fa-clock"></i>10-30</h7><br>
+                                    <span class="badge bg-danger" id="logo"
+                                        style="height: 15px; width: 30px; font-size: 9px;">Offer </span>
+                                    <span style="font-size: 13px;">60% off | use coupen vignesh28</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <button class="btn btn-danger mt-4 " disabled>
+                                <span class="spinner-grow spinner-grow-sm"></span>
+                                Loading...
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="container">
+            <div class="row vvv">
+                <div class="col-sm-12 text-center vvv">
+                    <h5>Operate food store or restaurants?<a href="#" class="text-decoration-none text-danger"> Work
+                            With Us</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 " style="font-size: 14px; line-height: 17px;">
+                    <h6> SUBSCRIBE TO OUR NEWSLETTER</h6>
+                    <form class="d-flex">
+                        <input class="form-control me-1 search1 " type="search" placeholder="Please enter your email"
+                            aria-label="Search" style="font-size: 14px; width: 50%;">
+                        <button class="btn btn-outline-success search2" type="submit"
+                            style="background-color:#FF3008; color: white; border-color:#FF3008 ;">subscribe</button>
+                    </form>
+                    <p class="ppp"><a href="#" style="text-decoration: none;">Register now </a>to get updates on <a
+                            href="#" style="text-decoration: none; color: #FF3008;">offers and coupens</a></p>
+                    <p>DOWNLOAD APP </p>
+                    <img src="google play1.png" alt="v" width="124px">
+                    <img src="apple.png" alt="background-color" width="120px">
+                </div>
+                <div class="col-sm-2" style="font-size: 14px; line-height: 18px;">
+                    <h6>ABOUT OE</h6>
+                    <p style="color: #6C8BB9;">About Us</p>
+                    <p style="color: #6C8BB9;">Culture</p>
+                    <p style="color: #6C8BB9;">Blog</p>
+                    <p style="color: #6C8BB9;">Careers</p>
+                    <p style="color: #6C8BB9;">Contact</p>
+                </div>
+                <div class="col-sm-2" style="font-size: 14px; line-height: 18px;">
+                    <h6>FOR FOODIES</h6>
+                    <p style="color: #6C8BB9;">Community</p>
+                    <p style="color: #6C8BB9;">Developers</p>
+                    <p style="color: #6C8BB9;">Blogger help</p>
+                    <p style="color: #6C8BB9;">Verified users</p>
+                    <p style="color: #6C8BB9;">Code of Conduct</p>
+                </div>
+                <div class="col-sm-2" style="font-size: 14px; line-height: 18px;">
+                    <h6>RESTAURAUNTS</h6>
+                    <p style="color: #6C8BB9;">Advertise</p>
+                    <p style="color: #6C8BB9;">Add a Restaurant</p>
+                    <p style="color: #6C8BB9;">Claim your Listing </p>
+                    <p style="color: #6C8BB9;">For Businesses</p>
+                    <p style="color: #6C8BB9;">Owner Guidlines</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section5">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-12 mt-5" style="text-transform: capitalize;">
+                        <h7>POPULAR COUNTRIES</h7>
+                        <p style="font-size: 13px;"> australia | brasil | canada | chile | czech republic |
+                            india | ireland | new
+                            zeland | united kingdom | turkey | phillipines | srilanka | corea | australia |
+                            brasil | canada | chile |
+                            czech republic
+                            india | ireland | new zeland | united kingdom | turkey | phillipines | srilanka
+                            | corea | australia |
+                            brasil | canada | chile | czech republic | india | ireland | new zeland | united
+                            kingdom | turkey
+                            phillipines | srilanka | corea | australia | brasil | canada | chile | czech
+                            republic | india | ireland |
+                            new zeland | united kingdom | turkey | phillipines | srilanka | corea </p>
+                        <h7>POPULAR FOOD</h7>
+                        <p style="font-size: 13px;">australia | brasil | canada | chile | czech republic |
+                            india | ireland | new
+                            zeland | united kingdom | turkey | phillipines | srilanka | corea | australia |
+                            brasil | canada | chile |
+                            czech republic
+                            india | ireland | new zeland | united kingdom | turkey | phillipines | srilanka
+                            | corea | australia |
+                            brasil | canada | chile | czech republic | india | ireland | new zeland | united
+                            kingdom | turkey
+                            phillipines | srilanka | corea | australia | brasil | canada | chile | czech
+                            republic | india | ireland |
+                            new zeland | united kingdom | turkey | phillipines | srilanka | corea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="section6">
+        <div class="container text-center">
+            <div class="footer">
+                <div class="footertext">
+                    <p style="font-size: 12px; ">&copy;copyright 2023 Food Line. All Rights Reserved</p>
+                </div>
+
+                <h6 style="font-size: 11px;">Made With &#x1F9E1; by <span style="color: red; font-size: 11px;">Vignesh -
+                        Ask
+                        Bootstrap</span></h6>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
